@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit News</title>
+</head>
+<body>
+    <form method="POST" >
+        {% csrf_token %}
+
+        <center><h1> TEXT AREA </h1>
+          <h6> Please fill the credentials</h6>
+
+       <div class="form-group">
+            <h3><label for="exampleInputEmail1">Title </label>
+            <input type="text" class="form-control" id="news_title"name ="title" 
+            required placeholder="Add Title ">
+          </div></h3><br>
+
+
+          <div class="form-group">
+            <h3><label for="exampleInputEmail1">Add News </label>
+            <textarea type="text" class="form-control" id="text_submit_news" name="para"  placeholder="Enter Text">
+          </div></h3><br>
+    
+</body>
+</html>
